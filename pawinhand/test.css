@@ -1,22 +1,11 @@
-:root {
-    --bg-color: blue;
-    --color: white;
-}
-   
 html, body {
-    /* background-color:var(--bg-color); */
     width: 100%;
     height: 100%;
-}
-
-h1 {
-    color:var(--color);
 }
 
 div {
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
 }
 
 #a {
