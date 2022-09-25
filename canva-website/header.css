@@ -1,0 +1,90 @@
+header {
+    display: flex;
+    min-height: 72px;
+    max-height: 72px;
+    padding: 16px 28px;
+}
+
+nav {
+    display: flex;
+    margin-right: 70px;
+    margin-left: 16px;
+    align-items: center;
+}
+
+.logo {
+
+}
+
+
+.nav__item {
+    height: 40px;
+    background-color: white;
+    padding: 10px 8px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+.nav__item:hover {
+    background-color: rgba(64,87,109,.07);
+    cursor: pointer;
+}
+
+.nav__item span {
+    padding: 0px 8px;
+    margin: 6.7px 0px;
+}
+
+.space {
+    width: 524px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: 255px;
+    height: 40px;
+}
+.search .btn {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.search .btn:hover {
+    cursor: pointer;
+} 
+
+.search__login {
+    background-color: rgba(64,87,109,.07);
+    margin-right: 12px;
+}
+
+.search__login:hover {
+    background-color: rgba(64, 87, 109, 0.1);
+}
+
+.search__sign {
+    background-color: #7830e6;
+    color: white;
+}
+
+.search__sign:hover {
+    background-color: rgba(120, 48, 230, 0.9);
+}
+
+
+.gradtext {
+    background: -webkit-linear-gradient(right, #06bace, #7830e6);
+    background:    -moz-linear-gradient(right, #06bace, #7830e6);
+    background:      -o-linear-gradient(right, #06bace, #7830e6);
+    background:         linear-gradient(to right, #06bace, #7830e6);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+}

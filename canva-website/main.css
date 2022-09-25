@@ -1,0 +1,115 @@
+html {
+    font-family: Canva Sans,Noto Sans Variable,Noto Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+
+main {
+    width: 1284px;
+    height: 100vh;
+    margin: auto;
+}
+
+.Breadcrumb {
+    margin: 16px auto;
+    padding: 1px 0px;
+    font-size: .9rem;
+}
+
+.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 433px;
+    background-image: url(./img/sitemapbanner.jpg);
+    background-size: cover;
+    background-position-y: center;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    color: white;
+}
+
+.jumbotron::before{
+    content:"";
+    opacity:1;
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    background-color: rgba(30,41,51,.45);
+    border-radius: 10px;
+}
+
+.jumbotron__message{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    margin-left: 48px;
+    padding: 107px 0;
+}
+
+.jumbotron__message h1 {
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+.jumbotron__message p {
+    margin-top: 10px;
+}
+
+.jumbotron__btn {
+    margin-top: 30px;
+    width: 165px;
+    height: 40px;
+    padding: 6px 16px;
+    font-size: .85rem;
+    font-weight: bold;
+    background-color: #7830e6;
+    border-radius: 5px;
+    box-sizing: border-box;
+    line-height: 28px;
+}
+
+.other-logo {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 64px;
+    padding: 16px 0px 8px;
+    box-sizing: content-box;
+}
+
+.other-logo__logo {
+    width: 128px;
+    height: 64px;
+}
+
+.other-logo__logo img {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.intro {
+    width: 100%;
+    margin-top: 10px;
+    border-top: 1px solid rgba(57,76,96,.15);
+    padding-top: 100px;
+}
+
+.intro__message {
+    width: 900px;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.intro__bento-message {
+    border: 1px solid red;
+    color: black;
+}
