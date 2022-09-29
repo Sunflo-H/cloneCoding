@@ -1,29 +1,48 @@
 header {
     display: flex;
-    min-height: 72px;
-    max-height: 72px;
+    width: 100%;
+    height: 72px;
     padding: 16px 28px;
+    /* box-shadow: 0 0 3px black; */
 }
 
 nav {
     display: flex;
-    margin-right: 70px;
     margin-left: 16px;
     align-items: center;
+    margin-right: auto;
+    height: 40px;
+}
+
+.hamburger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.hamburger:hover {
+    background-color: rgba(64,87,109,.07);
+    cursor: pointer;
 }
 
 .logo {
-
+    
 }
 
-
 .nav__item {
-    height: 40px;
-    background-color: white;
     padding: 10px 8px;
     font-size: 0.9rem;
     border-radius: 10px;
     margin-left: 6px;
+}
+
+.nav__item:last-child {
+    display: none;
 }
 
 .nav__item:hover {
@@ -36,43 +55,41 @@ nav {
     margin: 6.7px 0px;
 }
 
-.space {
-    width: 524px;
-}
-.search {
+
+
+.login {
     display: flex;
     align-items: center;
-    width: 255px;
-    height: 40px;
 }
-.search .btn {
+
+.login .btn {
     width: 120px;
-    height: 40px;
+    height: 100%;
     border-radius: 5px;
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
     font-size: 0.9rem;
 }
-.search .btn:hover {
+.login .btn:hover {
     cursor: pointer;
 } 
 
-.search__login {
+.login__login {
     background-color: rgba(64,87,109,.07);
-    margin-right: 12px;
+    margin-right: 16px;
 }
 
-.search__login:hover {
+.login__login:hover {
     background-color: rgba(64, 87, 109, 0.1);
 }
 
-.search__sign {
+.login__sign {
     background-color: #7830e6;
     color: white;
 }
 
-.search__sign:hover {
+.login__sign:hover {
     background-color: rgba(120, 48, 230, 0.9);
 }
 
@@ -87,4 +104,34 @@ nav {
     color: transparent;
     font-size: 2rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 1200px){
+    .nav__item:nth-child(5), .nav__item:nth-child(6) {
+        display: none;
+    }
+
+    .nav__item:last-child {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav__item {
+        display: none;
+    }
+
+    .nav__item:last-child {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .login {
+        display: none;
+    }
 }

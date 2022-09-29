@@ -3,12 +3,14 @@ html {
 }
 
 main {
-    width: 1284px;
+    max-width: 1300px;
     height: 100vh;
     margin: auto;
+    padding: 0 8px;
+    box-sizing: border-box;
 }
 
-.Breadcrumb {
+.breadcrumb {
     margin: 16px auto;
     padding: 1px 0px;
     font-size: .9rem;
@@ -45,6 +47,7 @@ main {
     height: 100%;
     margin-left: 48px;
     padding: 107px 0;
+    border: 1px solid red;
 }
 
 .jumbotron__message h1 {
@@ -94,22 +97,51 @@ main {
     object-fit: contain;
 }
 
-.intro {
+.introduction {
     width: 100%;
     margin-top: 10px;
     border-top: 1px solid rgba(57,76,96,.15);
     padding-top: 100px;
 }
 
-.intro__message {
+.introduction__message {
     width: 900px;
     height: 400px;
     text-align: center;
     margin: 0 auto;
-    /* border: 1px solid red; */
+
 }
 
-.intro__bento-message {
-    border: 1px solid red;
-    color: black;
+.introduction__message > p {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #11171d99;
+    line-height: 24px;
+}
+
+table {
+    margin-top: 20px;
+}
+.introduction__bento-message {
+    width: 284px;
+    height: 112px;
+    padding: 12px;
+}
+
+.bento-message__icon {
+    border-radius: 999px;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
+    text-align: center;
+    background-color:#edf0f2;
+}
+
+.bento-message__icon i {
+    font-size: 1.5rem;
+    line-height: 48px;
+}
+
+.bento-message__message {
+    margin-top: 20px;
 }
