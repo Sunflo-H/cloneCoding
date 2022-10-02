@@ -56,13 +56,14 @@ nav {
 }
 
 
-
 .login {
     display: flex;
     align-items: center;
 }
 
-.login .btn {
+.login__login--btn {
+    background-color: rgba(64,87,109,.07);
+    margin-right: 16px;
     width: 120px;
     height: 100%;
     border-radius: 5px;
@@ -71,26 +72,27 @@ nav {
     font-weight: bold;
     font-size: 0.9rem;
 }
-.login .btn:hover {
-    cursor: pointer;
-} 
 
-.login__login {
-    background-color: rgba(64,87,109,.07);
-    margin-right: 16px;
-}
-
-.login__login:hover {
+.login__login--btn:hover {
     background-color: rgba(64, 87, 109, 0.1);
+    cursor: pointer;
 }
 
-.login__sign {
+.login__sign--btn {
     background-color: #7830e6;
     color: white;
+    width: 120px;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
-.login__sign:hover {
+.login__sign--btn:hover {
     background-color: rgba(120, 48, 230, 0.9);
+    cursor: pointer;
 }
 
 

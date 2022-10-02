@@ -4,16 +4,21 @@ html {
 
 main {
     max-width: 1300px;
-    height: 100vh;
+    /* height: 100vh; */
     margin: auto;
     padding: 0 8px;
     box-sizing: border-box;
+
+    word-break: keep-all;
+
+    border: 1px solid red;
 }
 
 .breadcrumb {
     margin: 16px auto;
-    padding: 1px 0px;
+    padding: 1px 0;
     font-size: .9rem;
+    /* border: 1px solid red; */
 }
 
 .jumbotron {
@@ -27,6 +32,7 @@ main {
     margin-top: 20px;
 
     color: white;
+    
 }
 
 .jumbotron::before{
@@ -43,11 +49,13 @@ main {
 
 .jumbotron__message{
     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 50%;
-    height: 100%;
     margin-left: 48px;
-    padding: 107px 0;
-    border: 1px solid red;
+    
+    /* padding: 107px 0; */
+    /* border: 1px solid red; */
 }
 
 .jumbotron__message h1 {
@@ -59,7 +67,7 @@ main {
     margin-top: 10px;
 }
 
-.jumbotron__btn {
+.btn {
     margin-top: 30px;
     width: 165px;
     height: 40px;
@@ -70,66 +78,92 @@ main {
     border-radius: 5px;
     box-sizing: border-box;
     line-height: 28px;
+    text-align: center;
+    color: white;
 }
 
-.other-logo {
+.btn:hover {
+    cursor: pointer;
+}
+
+.logos {
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
+    flex-wrap: wrap;
     width: 100%;
-    height: 64px;
     padding: 16px 0px 8px;
     box-sizing: content-box;
+    border-bottom: 1px solid rgba(57,76,96,.15);
 }
 
-.other-logo__logo {
+.logos__logo {
     width: 128px;
     height: 64px;
+    /* border: 1px solid red; */
 }
 
-.other-logo__logo img {
+.logos__logo img {
     display: block;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%;
-    height: 50%;
+    width: 128px;
+    height: 32px;
     object-fit: contain;
+    /* border: 1px solid red; */
 }
 
 .introduction {
     width: 100%;
     margin-top: 10px;
-    border-top: 1px solid rgba(57,76,96,.15);
+    
     padding-top: 100px;
 }
 
-.introduction__message {
-    width: 900px;
-    height: 400px;
+.introduction__start {
+    width: 100%;
+    /* height: 400px; */
     text-align: center;
     margin: 0 auto;
-
+    /* border: 1px solid red; */
 }
 
-.introduction__message > p {
+.introduction-message {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.introduction-message > p{
     margin-top: 10px;
     font-size: 0.85rem;
     color: #11171d99;
     line-height: 24px;
 }
 
-table {
-    margin-top: 20px;
-}
 .introduction__bento-message {
-    width: 284px;
-    height: 112px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    width: 100%;
     padding: 12px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+
+}
+
+.bento-message {
+    /* border: 1px solid red; */
+    width: 30%;
+    margin-top: 30px;
 }
 
 .bento-message__icon {
     border-radius: 999px;
+    min-width: 48px;
+    min-height: 48px;
     width: 48px;
     height: 48px;
     margin: 0 auto;
@@ -138,10 +172,240 @@ table {
 }
 
 .bento-message__icon i {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 48px;
 }
 
 .bento-message__message {
     margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.intorduction__middle {
+    /* border: 1px solid red; */
+}
+
+.notebook-background {
+    position: relative;
+    top: 0;
+    left: -100px;
+    height: 100%;
+    width: 700px !important;
+    background-image: url('./img/device_w1200xh710_e1d587a4d5c85a5a0f9ad7335b6959224555f59f03a0485231b6f3f1a2e9a9d7.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* border: 1px solid red; */
+    transform: scale(1.1);
+}
+
+.notebook-background img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -53%);
+    width: 73%;
+    height: 60%;
+    /* border: 1px solid red; */
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    /* height: 500px; */
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px;
+    border: 1px solid red;
+}
+
+.item:first-child {
+    background-color: #f8f9f9;
+}
+
+.item__img {
+    width: calc((100% - 24px) / 2);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.item__img img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.item__message {
+    width: calc((100% - 24px) / 2);
+    border: 1px solid green;
+    padding: 0 56px;
+    margin: auto 0;
+}
+
+.item__message--number {
+    /* border: 1px solid green; */
+    margin: auto 0;
+}
+
+.item__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.item__text {
+    display: inline-block;
+    color: rgba(17,23,29,.6);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    margin-top: 30px;
+}
+
+.item__space {
+    width: 24px;
+    height: 24px;
+}
+
+.number {
+    display: flex;
+    margin-top: 25px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.number:first-child {
+    margin-top: 20px;
+}
+
+.number__icon {
+    /* border: 1px solid red; */
+    min-width: 24px;
+    min-height: 24px;
+    width: 24px;
+    height: 24px;
+    background-color: #7830e6;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+}
+
+.number__message {
+    margin-left: 10px;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width:1300px) {
+    main {
+        padding: 0 32px;
+    }
+
+    .jumbotron__message {
+
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .logos__logo {
+        width: 30%;
+    }
+
+    .logos__logo img {
+        /* display: block; */
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:900px) {
+    main {
+        padding: 0 0;
+    }   
+
+    .breadcrumb {
+        padding: 1px 32px;
+    }
+    
+    .jumbotron {
+        height: 240px;
+        border-radius: 0;
+    }
+    
+    .jumbotron__message {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .jumbotron__message h1 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .jumbotron__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .introduction {
+        padding-top: 50px;
+    }
+
+    .introduction__start {
+        padding: 0 24px;
+    }
+
+    .introduction-message {
+        text-align: start;
+    }
+
+    .introduction-message h1{
+        font-size: 20px;
+    }
+
+    .introduction__bento-message {
+        padding: 20px 0 0 0;
+    }
+
+    .bento-message {
+        display: flex;
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    
+
+    .bento-message__icon {
+
+    }
+
+    .bento-message__message {
+        margin-top: 0;
+        /* border: 1px solid red; */
+        width: 330px;
+        text-align: start;
+        line-height: 1.4rem
+    }
+}
+
+@media screen and (max-width:600px) {
+    .jumbotron {
+        height: 305px;
+    }
+
+    .logos__logo {
+        width: 50%;
+    }
+
+    .bento-message {
+        width: 100%;
+    }
+
+    .bento-message__message {
+        width: 100%;
+        margin-left: 20px;
+        /* line-height: 48px; */
+        /* border: 1px solid red; */
+    }
+    
 }

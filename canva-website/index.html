@@ -27,8 +27,8 @@
             
         </nav>
         <div class="login">
-            <div class="login__login btn">로그인하세요.</div> 
-            <div class="login__sign btn">가입</div>
+            <div class="login__login--btn">로그인하세요.</div> 
+            <div class="login__sign--btn">가입</div>
         </div>
     </header>
     <main>
@@ -38,98 +38,150 @@
         <div class="jumbotron">
             <div class="jumbotron__message">
                 <h1>
-                    Canva로 온라인에서 멋진<br>
-                    사이트맵을 디자인하세요
+                    Canva로 온라인에서 멋진 사이트맵을 디자인하세요
                 </h1>
                 <p>
                     Canva로 웹사이트 비주얼 가이드를 디자인하고 지속적으로 관리하세요.
                 </p>
-                <div class="jumbotron__btn">
+                <div class="btn">
                     사이트맵 디자인하기
                 </div>
             </div>
         </div>
-        <div class="other-logo">
-            <div class="other-logo__logo">
+        <div class="logos">
+            <div class="logos__logo">
                 <img src="./img/skyscanner.file.3142e350.png">
             </div>
-            <div class="other-logo__logo">
+            <div class="logos__logo">
                 <img src="./img/playa-bowls.file.e835276e.png">
             </div>
-            <div class="other-logo__logo">
+            <div class="logos__logo">
                 <img src="./img/painting-with-a-twist.file.5113af1c.png">
             </div>
-            <div class="other-logo__logo">
+            <div class="logos__logo">
                 <img src="./img/realty-austin.file.26b97613.png">
             </div>
-            <div class="other-logo__logo">
+            <div class="logos__logo">
                 <img src="./img/engie.file.7768fc5b.png">
             </div>
-            <div class="other-logo__logo">
+            <div class="logos__logo">
                 <img src="./img/cityofla.file.ae7adfb1.png">
             </div>
         </div>
-        <article class="introduction">
-            <div class="introduction__message">
-                <h1>사이트맵 만들기 도구의 기능</h1>
-                <p>
-                    지도는 우리를 목적지까지 안내해주는 역할을 합니다. 웹사이트의 사이트맵 역시 사용자가 원하는 정보를 빠르게 찾을 수 있도록 도와주는 검색<br>
-                    도구입니다. 또한 사이트맵은 검색 엔진의 길잡이 역할도 합니다. 사이트맵이 없으면 검색 엔진이 중요도가 낮은 페이지만 검색하고 중요도가 높은 <br>
-                    것은 놓칠 수 있습니다.
-                </p>
-                <table border="1">
-                    <tr>
-                        <td class="introduction__bento-message">
-                            <div class="bento-message">
-                                <div class="bento-message__icon">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </div>
-                                <div class="bento-message__message">20가지가 넘는 전문가 수준의 그래프 중에서 선택</div>
-                            </div>
-                        </td>
-                        <td class="introduction__bento-message">
-                            <div class="bento-message">
-                                <div class="bento-message__icon"><i class="fa-solid fa-table-cells-large"></i></div>
-                                <div class="bento-message__message">전문가가 디자인한 템플릿으로 워크플로우 가속화</div>
-                            </div>
-                        </td>
-                        <td class="introduction__bento-message">
-                            <div class="bento-message">
-                                <div class="bento-message__icon"><i class="fa-solid fa-icons"></i></div>
-                                <div class="bento-message__message">손쉬운 데이터 시각화 – 복잡한 소프트웨어 학습 불필요</div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="introduction__bento-message">
-                            <div class="bento-message">
-                                <div class="bento-message__icon"><i class="fa-solid fa-download"></i></div>
-                                <div class="bento-message__message">고해상도 사이트맵 게시, 공유, 다운로드</div>
-                            </div>
-                        </td>
-                        <td class="introduction__bento-message">
-                            <div class="bento-message">
-                                <div class="bento-message__icon"><i class="fa-solid fa-chart-column"></i></div>
-                                <div class="bento-message__message">프레젠테이션, 보고서 등의 문서에 간편하게 사이트맵 삽입</div>
-                            </div>
-                        </td>
-                        <td class="introduction__bento-message">
-                            <div class="bento-message">
-                                <div class="bento-message__icon"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
-                                <div class="bento-message__message">디자인 경력이 없는 사용자를 고려한 드래그 앤 드롭 방식의 편리한 도구</div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
+        <div class="introduction">
+            <div class="introduction__start">
+                <div class="introduction-message">
+                    <h1>사이트맵 만들기 도구의 기능</h1>
+                    <p>
+                        지도는 우리를 목적지까지 안내해주는 역할을 합니다. 웹사이트의 사이트맵 역시 사용자가 원하는 정보를 빠르게 찾을 수 있도록 도와주는 검색
+                        도구입니다. 또한 사이트맵은 검색 엔진의 길잡이 역할도 합니다. 사이트맵이 없으면 검색 엔진이 중요도가 낮은 페이지만 검색하고 중요도가 높은
+                        것은 놓칠 수 있습니다.
+                    </p>
+                </div>
+                <div class="introduction__bento-message">
+                    <div class="bento-message">
+                        <div class="bento-message__icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="bento-message__message">20가지가 넘는 전문가 수준의 그래프 중에서 선택</div>
+                    </div>
+                    <div class="bento-message">
+                        <div class="bento-message__icon"><i class="fa-solid fa-table-cells-large"></i></div>
+                        <div class="bento-message__message">전문가가 디자인한 템플릿으로 워크플로우 가속화</div>
+                    </div>
+                    <div class="bento-message">
+                        <div class="bento-message__icon"><i class="fa-solid fa-icons"></i></div>
+                        <div class="bento-message__message">손쉬운 데이터 시각화 – 복잡한 소프트웨어 학습 불필요</div>
+                    </div>
+                    <div class="bento-message">
+                        <div class="bento-message__icon"><i class="fa-solid fa-download"></i></div>
+                        <div class="bento-message__message">고해상도 사이트맵 게시, 공유, 다운로드</div>
+                    </div>
+                    <div class="bento-message">
+                        <div class="bento-message__icon"><i class="fa-solid fa-chart-column"></i></div>
+                        <div class="bento-message__message">프레젠테이션, 보고서 등의 문서에 간편하게 사이트맵 삽입</div>
+                    </div>
+                    <div class="bento-message">
+                        <div class="bento-message__icon"><i class="fa-solid fa-arrows-up-down-left-right"></i></div>
+                        <div class="bento-message__message">디자인 경력이 없는 사용자를 고려한 드래그 앤 드롭 방식의 편리한 도구</div>
+                    </div>
+                </div>
             </div>
-        </article>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <div class="introduction__total"></div>
+
+            <div class="intorduction__middle">
+                <!-- <section class="item">
+                    <div class="notebook-background">
+                        <img src="./img/MaroonShapesSitemapChart.png" alt="Maroon">
+                    </div>
+                    <div class="item__message--number">
+                        <div class="item__title">Canva로 손쉽게 사이트맵 디자인하기</div>
+                        <div class="number-list">
+                            <div class="number">
+                                <div class="number__icon">
+                                    <span>1</span>
+                                </div>
+                                <div class="number__message">
+                                    <span>canva에 계정을 만들어 나만의 마인드맵 디자인을 시작하세요.</span>
+                                </div>
+                            </div>
+                            <div class="number">
+                                <div class="number__icon">
+                                    <span>2</span>
+                                </div>
+                                <div class="number__message">
+                                    <span>라이브러리에서 전문가들이 디자인한 템플릿 중 하나를 고르세요</span>
+                                </div>
+                            </div>
+                            <div class="number">
+                                <div class="number__icon">
+                                    <span>3</span>
+                                </div>
+                                <div class="number__message">
+                                    <span>보유하고 있는 사진을 업로드하거나 1백만개 이상의 Canva 스톡 이미지에서 원하는 이미지를 선택하세요.</span>
+                                </div>
+                            </div>
+                            <div class="number">
+                                <div class="number__icon">
+                                    <span>4</span>
+                                </div>
+                                <div class="number__message">
+                                    <span>이미지를 수정하거나 화려한 필터를 적용하고 텍스트를 편집하세요.</span>
+                                </div>
+                            </div>
+                            <div class="number">
+                                <div class="number__icon">
+                                    <span>5</span>
+                                </div>
+                                <div class="number__message">
+                                    <span>디자인을 저장하고 공유하세요.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">사이트맵 디자인하기</div>
+                    </div>
+                </section> -->
+                <section class="item right">
+                    <div class="item__img">
+                        <img src="./img/sitemap1.png" alt="sitemap1">
+                    </div>
+                    <span class="item__space"></span>
+                    <div class="item__message">
+                        <h1 class="item__title">멋진 사이트맵을 만들어 사용자의 웹사이트 이용을 도와주세요</h1>
+                        <span class="item__text">이처럼 중요한 사이트맵을 디자인하려면 전문 디자이너의 도움을 받거나 많을 시간을 투자해야 합니다.하지만 Canva와 함께라면 전문적인 수준의 템플릿과 간편한 드래그 앤드 드롭 방식의 디자인 도구로 비주얼 사이트맵 제작에 들어가는 수고와 시간을 덜 수 있습니다.직관적이고 심플한 Canva 디자인 플랫폼만 있으면 몇 번의 클릭만으로 머릿속 생각을 실제 사이트맵 디자인으로 구현할 수 있습니다.</span>
+                    </div>
+                </section>
+                <section class="item left">
+
+                </section>
+                <section class="item right">
+
+                </section>
+                <section class="item left">
+
+                </section>
+            </div>
+            <div class="introduction__end"></div>
+        </div>
+       
+        
         <article class="question">
 
         </article>
