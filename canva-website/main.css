@@ -11,7 +11,7 @@ main {
 
     word-break: keep-all;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .breadcrumb {
@@ -188,34 +188,32 @@ main {
 .notebook-background {
     position: relative;
     top: 0;
-    left: -100px;
+    left: -80px;
     height: 100%;
-    width: 700px !important;
+    width: 110%;
     background-image: url('./img/device_w1200xh710_e1d587a4d5c85a5a0f9ad7335b6959224555f59f03a0485231b6f3f1a2e9a9d7.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    /* border: 1px solid red; */
-    transform: scale(1.1);
 }
 
 .notebook-background img {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-48%, -53%);
-    width: 73%;
-    height: 60%;
+    transform: translate(-68%, -53%);
+    width: 75%;
     /* border: 1px solid red; */
+
 }
 
 .item {
     position: relative;
     display: flex;
     width: 100%;
-    padding-bottom: min(40%, 500px);
+    padding-bottom: min(40%, 450px);
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 50px;
     /* border: 1px solid red; */
 
 }
@@ -226,11 +224,11 @@ main {
 
 .item__content-wrapper {
     position: absolute;
+    display: flex;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    display: flex;
+    /* top: 0;
+    left: 0; */
     /* border: 1px solid blue; */
 }
 
@@ -239,9 +237,10 @@ main {
     border-radius: 10px;
     overflow: hidden;
     /* border: 1px solid red; */
+    text-align: center;
 }
 
-.item__img img {
+.item__img > img {
     max-width: 100%;
     height: 100%;
 }
@@ -254,8 +253,12 @@ main {
 }
 
 .item__message--number {
-    /* border: 1px solid green; */
+    width: calc((100% - 24px) / 2);
     margin: auto 0;
+    border: 1px solid green;
+    align-items: stretch;
+
+    /* 너비가 줄어들때 얘의 높이는 늘어나게하는게 있나? */
 }
 
 .item__title {
@@ -304,8 +307,62 @@ main {
     margin-left: 10px;
 }
 
+.number-list {
+    /* border: 1px solid red; */
+}
+
 .right {
     flex-direction: row-reverse;
+}
+
+.introduction__end {
+    border: 1px solid red;
+}
+
+.end-message {
+    width: 75%;
+    max-width: 777px;
+    border: 1px solid red;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.end-message h1 {
+    font-size: 1.4rem;
+}
+
+.end-message span {
+    color: rgba(17,23,29,.6);
+    font-size: .9rem;
+}
+
+.template-list {
+    border: 1px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.template {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid green;
+}
+
+.template > div {
+    border: 1px solid red;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.template img {
+    width: 100%;
+}
+
+.template img:hover {
+    cursor: pointer;
+    transition-duration: .5s;
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:1300px) {
@@ -326,6 +383,20 @@ main {
     .logos__logo img {
         /* display: block; */
         margin: auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .number {
+        margin-top: 0px;
+    }
+
+    .number:first-child {
+        margin-top: 0px;
+    }
+
+    .item__message--number .btn {
+        margin: 0;
     }
 }
 
