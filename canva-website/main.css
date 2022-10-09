@@ -443,27 +443,154 @@ main {
 }
 
 .faq {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-top: 1px solid rgba(57,76,96,.15);
     width: 100%;
 }
 
 .faq__wrapper {
     display: flex;
-    height: 310px;
-    margin: 96px 0;
-    border: 1px solid green;
+    width: 100%;
+    max-height: 600px;
+    min-height: 310px;
+    margin: 96px 0 48px;
+    /* border: 1px solid green; */
+    
 }
 
 .faq__box-left {
-    width: 40%;
+    min-width: 45%;
+    padding: 10px;
 }
 
 .faq__box-right {
     flex-grow: 1;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
+    padding: 10px;
 }
 
+.accordion {
+    border-bottom: 1px solid #11171d12;;
+    margin-bottom: 20px;
+    padding: 10px 0 20px;
+}
+
+.accordion__checkbox{
+    display: none;
+}
+
+.accordion__label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.accordion__label .arrow {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.arccordion__message {
+    max-height: 0;
+    overflow: hidden;
+    color: #11171d99;
+    font-size: .9rem;
+}
+
+
+.arccordion__message p {
+    display: inline-block;
+    padding: 20px 0 0;
+}
+
+.accordion__checkbox:checked + .accordion__label + .arccordion__message {
+    max-height: 100px;
+}
+
+.accordion__checkbox:checked + .accordion__label .arrow {
+    transform: rotate(180deg);
+}
+
+.accordion__label:hover {
+    color: #7830e6;
+}
+
+.etc {
+    border-top: 1px solid rgba(57,76,96,.15);
+    padding-top: 70px;
+}
+
+.etc__btn-list {
+    margin-bottom: 30px;
+}
+
+.etc__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.etc__btn-wrapper {
+    display: flex;
+}
+
+.etc__btn {
+    background-color: #edf0f2;
+    margin: 20px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .9rem;
+    cursor: pointer;
+}
+
+.etc__btn:first-child {
+    margin-left: 0;
+}
+
+.etc__btn:hover {
+    text-decoration: underline;
+}
+
+.etc__jumbotron {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-image: url(./img/sitemapbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right ;
+    border-radius: 10px;
+}
+
+.etc__jumbotron::before {
+    content: '';
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.etc__jumbotron-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    max-width: 848px;
+    width: 100%;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.etc__jumbotron-btn {
+    margin:20px auto;
+}
 
 @media screen and (max-width:1300px) {
     main {
